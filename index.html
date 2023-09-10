@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .kanban-board {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .column {
+            flex: 1;
+            padding: 10px;
+            background-color: #120E43;
+            border: 1px solid #EDC126;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        .column h2 {
+            text-align: center;
+        }
+
+        .task {
+            background-color: #120E43;
+            border: 1px solid #EDC126;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px 0;
+        }
+
+        .task-title {
+            font-weight: bold;
+        }
+
+        .task-description {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="column">
+            <h2>To Do</h2>
+            <div class="task">
+                <div class="task-title'>Task 1</div>
+                <div class="task-description">Description for Task 1</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 2</div>
+                <div class="task-description">Description for Task 2</div>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Doing</h2>
+            <div class="task">
+                <div class="task-title">Task 3</div>
+                <div class="task-description">Description for Task 3</div>
+            </div>
+        </div>
+        <div class="column">
+            <h2>Done</h2>
+            <div class="task">
+                <div class="task-title">Task 4</div>
+                <div class="task-description">Description for Task 4</div>
+            </div>
+            <div class="task">
+                <div class="task-title">Task 5</div>
+                <div class="task-description">Description for Task 5</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
